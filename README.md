@@ -1,86 +1,37 @@
-# ===============================
-# STEP 1: Create and navigate directories
-# ===============================
+# Linux Commands Cheat Sheet
 
-mkdir EV4                     # Create a new directory named EV4
-cd EV4                        # Move into EV4 directory
-
-mkdir 37                      # Create a directory with roll number
-cd 37                         # Move into directory 62
-
-cd -                           # Go back to the previous directory
-cd .                           # Stay in the current directory
-cd ..                          # Move to parent directory
-cd ~                           # Go to home directory
-cd /                           # Go to root directory
-
-pwd                            # Display current working directory path
-
-# ===============================
-# STEP 2: List files and directories
-# ===============================
-
-ls -l                          # List files and directories (long format)
-ls -al                         # List all files including hidden files
-
-# ===============================
-# STEP 3: Create directories
-# ===============================
-
-mkdir emptydummy               # Create an empty directory
-mkdir dummy                    # Create a directory named dummy
-
-# ===============================
-# STEP 4: Create files
-# ===============================
-
-touch file1                    # Create empty file file1
-touch file2                    # Create empty file file2
-
-# ===============================
-# STEP 5: Remove files and directories
-# ===============================
-
-rm -i file2                    # Delete file2 with confirmation
-rmdir emptydummy               # Remove empty directory emptydummy
-rmdir dummy                    # Fails because directory is not empty
-rm -r dummy                    # Remove dummy directory with its contents
-
-# ===============================
-# STEP 6: File content operations
-# ===============================
-
-cat > file1.txt                # Create file1.txt and enter text manually
-cat > file2.txt                # Create file2.txt and enter text manually
-
-cat file1.txt file2.txt > file_combined.txt   # Combine contents into one file
-cat file3.txt >> file_combined.txt             # Append file3.txt content
-
-# ===============================
-# STEP 7: Search text in files
-# ===============================
-
-grep -i hello file*            # Search for 'hello' (case-insensitive)
-
-# ===============================
-# STEP 8: Copy and rename files
-# ===============================
-
-cp file1.txt ~/ev4             # Copy file1.txt to ev4 directory
-mv file_combined.txt combined  # Rename file_combined.txt to combined
-
-# ===============================
-# STEP 9: Change file permissions
-# ===============================
-
-chmod u+x combined             # Give execute permission to owner
-chmod g-r combined             # Remove read permission from group
-chmod 777 combined             # Give full permissions to everyone
-
-# ===============================
-# STEP 10: User management (Admin only)
-# ===============================
-
-sudo useradd alice             # Create a new user named alice
-sudo passwd alice              # Set password for alice
-sudo userdel alice             # Delete user alice
+| Command | Description |
+| :--- | :--- |
+| `mkdir EV4` | Creates a new directory named EV4. |
+| `cd EV4` | Changes the current working directory to ev4. |
+| `mkdir 62` | Creates a directory with the given roll number inside EV4 |
+| `cd 62` | Moves into that directory. |
+| `cd -` | moves back to the previously visited directory. |
+| `cd .` | stays in the current directory. |
+| `cd ..` | moves to the parent directory. |
+| `cd ~` | Navigates to the user’s home directory. |
+| `cd /` | Navigates to the root directory of the Linux file system. |
+| `pwd` | Displays the absolute path of the current working directory. |
+| `ls -l` | Lists files and directories. |
+| `ls -al` | Lists all files including hidden files |
+| `mkdir emptydummy` | Creates an empty directory named emptydummy. |
+| `mkdir dummy` | Creates a directory named dummy. |
+| `touch file1` | Creates an empty file named file1. |
+| `touch file2` | Creates an empty file named file2. |
+| `rm -i file2` | Deletes file2 after asking for user confirmation. |
+| `rmdir emptydummy` | Removes the directory emptydummy since it is empty. |
+| `rmdir dummy` | Fails because dummy is not empty.(only works when file is empty) |
+| `rm -r dummy` | Deletes the directory dummy along with all its contents. |
+| `cat > file1.txt` | Creates file1.txt and allows the user to enter text from the terminal. |
+| `cat > file2.txt` | Creates file2.txt and stores user-entered text. |
+| `cat file1.txt file2.txt > file_combined.txt` | Combines the contents of both files into file_combined.txt. |
+| `cat file3.txt >> file_combined.txt` | Appends the content of file3.txt to file_combined.txt. |
+| `grep -i hello file*` | Searches for the word “hello” (case-insensitive) in all files starting with file. |
+| `cp file1.txt ~/ev4` | Copies file1.txt to the ev4 directory. |
+| `mv file_combined.txt combined` | Renames the file to combined. |
+| `chmod u+x combined` | Gives execute permission to the file owner. |
+| `chmod g-r combined` | Removes read permission from the group. |
+| `chmod 777 combined` | Gives full read, write, and execute permissions to all users. |
+| `sudo useradd alice` | Creates a new user named alice. |
+| `sudo passwd alice` | Sets or changes the password for user alice. |
+| `sudo userdel alice` | Deletes the user alice from the system. |
