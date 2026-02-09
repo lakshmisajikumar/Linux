@@ -1,4 +1,4 @@
-echo "Name : Vasihnavi TV"
-echo "Roll Number:62"
-echo "Class : EVS4"
-echo "Current Date and Time: $(date)"
+echo "Name:Lakshmi Sajikumar"
+echo "Roll Number:37"
+echo "Class:EVS4"
+echo "Current Date and Time:$(date)"
