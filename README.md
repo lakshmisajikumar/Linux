@@ -4,10 +4,10 @@
 * `cd EV4`
     Changes the current working directory to ev4.
 
-* `mkdir 62`
+* `mkdir 37`
     Creates a directory with the given roll number inside EV4
 
-* `cd 62`
+* `cd 37`
     Moves into that directory.
 
 * `cd -`
@@ -40,13 +40,13 @@
 * `mkdir dummy`
     Creates a directory named dummy.
 
-* `touch file1`
-    Creates an empty file named file1.
+* `touch f1`
+    Creates an empty file named f1.
 
-* `touch file2`
-    Creates an empty file named file2.
+* `touch f2`
+    Creates an empty file named f2.
 
-* `rm -i file2`
+* `rm -i f2`
     Deletes file2 after asking for user confirmation.
 
 * `rmdir emptydummy`
@@ -58,25 +58,25 @@
 * `rm -r dummy`
     Deletes the directory dummy along with all its contents.
 
-* `cat > file1.txt`
-    Creates file1.txt and allows the user to enter text from the terminal.
+* `cat > f1.txt`
+    Creates f1.txt and allows the user to enter text from the terminal.
 
-* `cat > file2.txt`
-    Creates file2.txt and stores user-entered text.
+* `cat > f2.txt`
+    Creates f2.txt and stores user-entered text.
 
-* `cat file1.txt file2.txt > file_combined.txt`
-    Combines the contents of both files into file_combined.txt.
+* `cat f1.txt f2.txt > filecombined.txt`
+    Combines the contents of both files into filecombined.txt.
 
-* `cat file3.txt >> file_combined.txt`
-    Appends the content of file3.txt to file_combined.txt.
+* `cat f3.txt >> filecombined.txt`
+    Appends the content of f3.txt to filecombined.txt.
 
 * `grep -i hello file*`
     Searches for the word “hello” (case-insensitive) in all files starting with file.
 
-* `cp file1.txt ~/ev4`
-    Copies file1.txt to the ev4 directory.
+* `cp f1.txt ~/ev4`
+    Copies f1.txt to the ev4 directory.
 
-* `mv file_combined.txt combined`
+* `mv filecombined.txt combined`
     Renames the file to combined.
 
 * `chmod u+x combined`
@@ -88,11 +88,11 @@
 * `chmod 777 combined`
     Gives full read, write, and execute permissions to all users.
 
-* `sudo useradd alice`
-    Creates a new user named alice.
+* `sudo useradd lakshmi`
+    Creates a new user named lakshmi.
 
-* `sudo passwd alice`
-    Sets or changes the password for user alice.
+* `sudo passwd lakshmi`
+    Sets or changes the password for user lakshmi.
 
-* `sudo userdel alice`
-    Deletes the user alice from the system.
+* `sudo userdel lakshmi`
+    Deletes the user lakshmi from the system.
